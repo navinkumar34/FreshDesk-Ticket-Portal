@@ -180,7 +180,7 @@ const update_ticket = async(ticket) => {
         let errmsg = document.getElementById("errormsg");
         delAllChild(errmsg);
         let errpara = document.createElement("P");
-        errpara.appendChild(document.createTextNode("Something Went Wrong"));
+        errpara.appendChild(document.createTextNode("Ticket Already Deleted, Viewing from Restore Portal"));
         errmsg.appendChild(errpara);  
     }   
 };
