@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tickets Portal</title>
+        <link rel="stylesheet" type="text/css" href="Fresh_ticket.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="top">
+                <h1>CREATE</h1>
+                <img src="ticket.png">  
+            </div>
+            <div id= "errormsg">
+            </div>
+            <div class="content">
+                <div id="searchdiv">
+                    <input type="submit" id="cdivbtn"  class="main crclass" value="Create Ticket" >
+                    <input type="submit" id="sboxbtn"  class="righte" value="Search Ticket" >
+                    <input type="text" id="sbox" class= "righte" placeholder="Enter ticket Number">
+                </div>
+                <label for="name" >Username<sup>*</sup></label>
+                <input type="text" class="fields" id="name" placeholder="Enter your name here...">
+                <label for="contact" >Contact Email<sup>*</sup></label>
+                <input type="email" class="fields" id="contact" placeholder="Enter your email here...">
+                <label for="subject" >Subject<sup>*</sup></label>
+                <input type="text" class="fields" id="subject" placeholder="Enter the subject of the ticket here...">
+                <label for="ttype" >Type</label>
+                <select class="fields" id="ttype">
+                    <option value="">---</option>
+                    <option value="Question">Question</option>
+                    <option value="Incident">Incident</option>
+                    <option value="Problem">Problem</option>
+                    <option value="Feature Request">Freature Request</option>
+                    <option value="Refund">Refund</option>
+                </select>
+                <label for="tstatus">Status<sup>*</sup></label>
+                <select class="fields" id="tstatus">
+                    <option value="2">Open</option>
+                    <option value="3">Pending</option>
+                    <option value="4">Resolved</option>
+                    <option value="5">Closed</option>
+                </select>
+                <label for="tpriority">Priority<sup>*</sup></label>
+                <select class="fields" id="tpriority">
+                    <option value="1">Low</option>
+                    <option value="2">Medium</option>
+                    <option value="3">High</option>
+                    <option value="4">Urgent</option>
+                </select>
+                <label for="description">Description<sup>*</sup></label>
+                <textarea id="description" placeholder="Write description.."></textarea>
+                <input type="submit" id="subtn" value="Create Ticket">
+                <input type="submit" id="canbtn" value="Clear">
+                <input type="submit" id="upbtn"  class="main crclass" value="Update Ticket">
+                <input type="submit" id="dlbtn" class="main crclass" value="Delete Ticket">
+            </div>
+        </div>
+        <script src="Fresh_ticket.js"></script>
+    </body>
+</html> 
